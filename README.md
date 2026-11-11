@@ -4,11 +4,9 @@
 
 **qPCR curve quality control: amplification calls, plus automatic flagging of unusual curves and cycles.**
 
-<a href="Amplify_QC_Demo.mp4">
-  <img src="docs/demo_preview.gif" alt="Amplify QC demo: click a well and the flagged cycles are highlighted" width="900">
-</a>
-
-### ▶ [Watch the full narrated demo (3 min)](Amplify_QC_Demo.mp4)
+<video src="https://github.com/umahkhan/amplify-qc/raw/main/Amplify_QC_Demo.mp4" poster="https://github.com/umahkhan/amplify-qc/raw/main/docs/demo_preview.gif" controls muted width="900">
+  <img src="docs/demo_preview.gif" alt="Amplify QC demo" width="900">
+</video>
 
 </div>
 
