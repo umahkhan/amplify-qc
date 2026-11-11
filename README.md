@@ -8,7 +8,7 @@
   <img src="docs/demo_preview.gif" alt="Amplify QC demo: click a well and the flagged cycles are highlighted" width="900">
 </a>
 
-### ▶ [Watch the full narrated demo (2.5 min)](Amplify_QC_Demo.mp4)
+### ▶ [Watch the full narrated demo (3 min)](Amplify_QC_Demo.mp4)
 
 </div>
 
@@ -50,6 +50,16 @@ Click **Load demo plate** in the sidebar, or open `http://localhost:8501/?demo=1
 ```bash
 python train_model.py            # ~2-3 min on CPU, writes qpcr_model.pkl
 ```
+
+## Test plates
+
+`test_plates/` has three 96-well plates, each built around a different family of anomaly patterns, plus a few harmless look-alike wells that should *not* be flagged. Bases are held-out clean wells the models never trained on; ground truth is in the `has_anomaly` and `anomaly_type` columns.
+
+| Plate | Patterns |
+|---|---|
+| `plate1_spikes_dropouts_noise.csv` | single and double spikes, signal dropouts, early and late noise bursts |
+| `plate2_drift_and_plateau.csv` | baseline drift and steps, creeping negatives, plateau droop, runaway and wobble, late weak rise |
+| `plate3_takeoff_and_shape.csv` | biphasic curves, stalled takeoff and amplification, sudden drop, pre-takeoff bump, false takeoff, periodic wobble |
 
 ## Notes
 
